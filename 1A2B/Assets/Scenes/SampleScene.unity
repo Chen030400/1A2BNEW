@@ -1401,7 +1401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &739925987
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1517,9 +1517,10 @@ MonoBehaviour:
   AllLimitMode: {fileID: 1352048215}
   HardMode: {fileID: 1434802365}
   Help: {fileID: 1392932874}
-  MainMenu: {fileID: 1268605925}
+  MainMenu: {fileID: 1615315822}
   Gaming: {fileID: 755960637}
   HelpPanel: {fileID: 739925986}
+  FourDigits: {fileID: 621377784}
 --- !u!1 &755960637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,7 +1538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &755960638
 RectTransform:
   m_ObjectHideFlags: 0

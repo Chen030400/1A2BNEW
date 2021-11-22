@@ -21,7 +21,7 @@ public class NumberButtonManager : MonoBehaviour
     [SerializeField] Button enter;
     [SerializeField] Text  fourDigitsText;
 
-    string number;
+    public string number;
 
 
     void Start()
@@ -113,46 +113,55 @@ public class NumberButtonManager : MonoBehaviour
     {
         number = number + "1";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n2()
     {
         number = number + "2";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n3()
     {
         number = number + "3";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n4()
     {
         number = number + "4";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n5()
     {
         number = number + "5";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n6()
     {
         number = number + "6";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n7()
     {
         number = number + "7";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n8()
     {
         number = number + "8";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n9()
     {
         number = number + "9";
         print(number);
+        fourDigitsText.text = number;
     }
 
 

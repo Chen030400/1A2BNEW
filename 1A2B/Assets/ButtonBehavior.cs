@@ -18,17 +18,8 @@ public class ButtonBehavior : MonoBehaviour
     [SerializeField] GameObject MainMenu;
     [SerializeField] GameObject Gaming;
     [SerializeField] GameObject HelpPanel;
-
-
-    GameObject currentPanel;
-
-    public enum PanelOption
-    {
-        MainMenu,
-        Gaming,
-        greeting,
-        Ending
-    }
+    [SerializeField] Text FourDigits;
+    
 
     void Start()
     {
@@ -38,6 +29,18 @@ public class ButtonBehavior : MonoBehaviour
         AllLimitMode.onClick.AddListener(SwitchMenu);
         HardMode.onClick.AddListener(SwitchMenu);
         Help.onClick.AddListener(GoToHelpPanel);
+        Restart.onClick.AddListener(RestartTheGame);
+        //MainMenu.active = true;
+        //Gaming.active = false;
+        //HelpPanel.active = false;
+
+
+    }
+
+    public void RestartTheGame()
+    {
+        FourDigits.text = "";
+       
 
     }
 
@@ -47,21 +50,13 @@ public class ButtonBehavior : MonoBehaviour
         HelpPanel.active = true;
     }
 
-    void Update()
-    {
-        
-    }
-
-    public void SwitchPanel(PanelOption option)
-    {
-
-    }
 
     void SwitchMenu()
     { 
 
         if (MainMenu.active == false)
         {
+            print(MainMenu.active);
             Debug.Log("A open Menu");
             MainMenu.active = true;
             Gaming.active = false;
@@ -70,6 +65,7 @@ public class ButtonBehavior : MonoBehaviour
         }
         else if (MainMenu.active == true)
         {
+            print(MainMenu.active);
             Debug.Log("A Start Game");
             MainMenu.active = false;
             Gaming.active = true;
