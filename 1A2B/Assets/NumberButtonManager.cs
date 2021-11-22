@@ -43,28 +43,28 @@ public class NumberButtonManager : MonoBehaviour
 
     private void Enter()
     {
-       
-    //           private void Enter(string guess)
-    //            {
-    //                a = 0;
-    //                b = 0;
-    //                foreach (char i in guess)
-    //                {
-    //                    if (answer.Contains(i))
-    //                    {
-    //                        if (answer.IndexOf(i) == guess.IndexOf(i))
-    //                        {
-    //                            a += 1;
-    //                        }
-    //                        else
-    //                        {
-    //                            b += 1;
-    //                        }
-    //                    }
-    //                }
-    //            }
 
-}
+        //private void Enter(string guess)
+        //{
+        //    a = 0;
+        //    b = 0;
+        //    foreach (char i in guess)
+        //    {
+        //        if (answer.Contains(i))
+        //        {
+        //            if (answer.IndexOf(i) == guess.IndexOf(i))
+        //            {
+        //                a += 1;
+        //            }
+        //            else
+        //            {
+        //                b += 1;
+        //            }
+        //        }
+        //    }
+        //}
+
+    }
     //private void NewQuestion(int digit = 4)
     //{
     //    string number = "1234567890";
@@ -95,8 +95,8 @@ public class NumberButtonManager : MonoBehaviour
     //    }
     //}
 
-        //-----------------------------------------------------------------------------------------------
-        private void Remove()
+    //-----------------------------------------------------------------------------------------------
+    private void Remove()
     {
         number = number.Remove(number.Length -1 , 1);
         fourDigitsText.text = number;
@@ -113,46 +113,55 @@ public class NumberButtonManager : MonoBehaviour
     {
         number = number + "1";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n2()
     {
         number = number + "2";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n3()
     {
         number = number + "3";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n4()
     {
         number = number + "4";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n5()
     {
         number = number + "5";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n6()
     {
         number = number + "6";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n7()
     {
         number = number + "7";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n8()
     {
         number = number + "8";
         print(number);
+        fourDigitsText.text = number;
     }
     private void n9()
     {
         number = number + "9";
         print(number);
+        fourDigitsText.text = number;
     }
 
 
