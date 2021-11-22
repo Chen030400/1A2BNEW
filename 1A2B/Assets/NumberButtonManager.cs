@@ -40,12 +40,33 @@ public class NumberButtonManager : MonoBehaviour
         number9.onClick.AddListener(n9);
         remove.onClick.AddListener(Remove);
         enter.onClick.AddListener(Enter);
-    }
+        
+}
 
     private void Enter()
     {
-        //2A2B§PÂ_
-    }
+        string answer;
+    //           private void Enter(string guess)
+    //            {
+    //                a = 0;
+    //                b = 0;
+    //                foreach (char i in guess)
+    //                {
+    //                    if (answer.Contains(i))
+    //                    {
+    //                        if (answer.IndexOf(i) == guess.IndexOf(i))
+    //                        {
+    //                            a += 1;
+    //                        }
+    //                        else
+    //                        {
+    //                            b += 1;
+    //                        }
+    //                    }
+    //                }
+    //            }
+
+}
 
     //-----------------------------------------------------------------------------------------------
     private void Remove()
