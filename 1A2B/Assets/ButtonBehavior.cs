@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,8 +14,10 @@ public class ButtonBehavior : MonoBehaviour
     [SerializeField] Button TimeLimitMode;
     [SerializeField] Button AllLimitMode;
     [SerializeField] Button HardMode;
+    [SerializeField] Button Help;
     [SerializeField] GameObject MainMenu;
     [SerializeField] GameObject Gaming;
+    [SerializeField] GameObject HelpPanel;
 
 
     GameObject currentPanel;
@@ -34,6 +37,14 @@ public class ButtonBehavior : MonoBehaviour
         TimeLimitMode.onClick.AddListener(SwitchMenu);
         AllLimitMode.onClick.AddListener(SwitchMenu);
         HardMode.onClick.AddListener(SwitchMenu);
+        Help.onClick.AddListener(GoToHelpPanel);
+
+    }
+
+    private void GoToHelpPanel()
+    {
+        MainMenu.active = false;
+        HelpPanel.active = true;
     }
 
     void Update()
