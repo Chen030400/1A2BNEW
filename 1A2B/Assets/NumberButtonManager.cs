@@ -21,7 +21,8 @@ public class NumberButtonManager : MonoBehaviour
     [SerializeField] Button enter;
     [SerializeField] Text  fourDigitsText;
 
-    public string number;
+    string number;
+
 
 
     void Start()

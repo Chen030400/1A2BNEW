@@ -40,7 +40,8 @@ public class ButtonBehavior : MonoBehaviour
     public void RestartTheGame()
     {
         FourDigits.text = "";
-       
+        
+
 
     }
 
