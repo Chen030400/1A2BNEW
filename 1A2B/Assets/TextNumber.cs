@@ -16,4 +16,5 @@ public class TextNumber : MonoBehaviour
     {
         FourDigitsText.text = "";
     }
+
 }

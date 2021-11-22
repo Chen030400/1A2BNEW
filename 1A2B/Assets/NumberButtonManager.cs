@@ -8,15 +8,15 @@ using Random = System.Random;
 public class NumberButtonManager : MonoBehaviour
 {
 
+  
 
-    string number;
-
+   
 
     void Start()
     {
- 
-        
-}
+      
+
+    }
 
     private void Enter()
     {
@@ -73,7 +73,6 @@ public class NumberButtonManager : MonoBehaviour
     //}
 
     //-----------------------------------------------------------------------------------------------
-
 
 
 
