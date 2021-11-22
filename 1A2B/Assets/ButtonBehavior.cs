@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class ButtonBehavior : MonoBehaviour
 {
     [SerializeField] Button BackToMenu;
+    [SerializeField] Button BackToMenu2;
     [SerializeField] Button Restart;
     [SerializeField] Button Hints;
     [SerializeField] Button SafeMode;
@@ -30,11 +31,18 @@ public class ButtonBehavior : MonoBehaviour
         HardMode.onClick.AddListener(SwitchMenu);
         Help.onClick.AddListener(GoToHelpPanel);
         Restart.onClick.AddListener(RestartTheGame);
+        BackToMenu2.onClick.AddListener(SwitchToMenu);
         //MainMenu.active = true;
         //Gaming.active = false;
         //HelpPanel.active = false;
 
 
+    }
+
+    private void SwitchToMenu()
+    {
+        MainMenu.active = true;
+        HelpPanel.active = false;
     }
 
     public void RestartTheGame()
