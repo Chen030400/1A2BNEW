@@ -45,7 +45,7 @@ public class NumberButtonManager : MonoBehaviour
 
     private void Enter()
     {
-        string answer;
+       
     //           private void Enter(string guess)
     //            {
     //                a = 0;
